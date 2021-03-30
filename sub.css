@@ -1,0 +1,189 @@
+:root {
+    --circumstance-font: 'Noto Serif KR', serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+button {
+    font-family: 'Noto Sans KR', sans-serif
+}
+
+.main-background-images {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image-filter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* 상황 영역 */
+.circumstance-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--circumstance-font);
+}
+
+.circumstance-box {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto 1rem;
+    padding: 4rem 2rem;
+    background-color: rgba(4, 1, 10, 0.575);
+}
+
+.circumstance-text {
+    width: fit-content;
+    margin: auto;
+    color: aliceblue;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* 질문 영역 */
+.question-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: -1rem 0 1rem;
+}
+
+/* .question-box {
+    box-sizing: border-box;
+    width: 70%;
+    margin: auto;
+    border: 5px solid aliceblue;
+    padding: 2rem;
+    background-color: rgba(4, 1, 10, 0.575);
+} */
+.question-box {
+    box-sizing: border-box;
+    width: 75%;
+    margin: auto;
+    padding: 1.5rem 2rem;
+    /* border-radius: 5px; */
+    background-color: rgba(255, 255, 255, 0.733);
+    backdrop-filter: blur(2px);
+}
+
+.question-text {
+    width: fit-content;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: var(--circumstance-font);
+    font-size: 1.25em;
+    line-height: 1.8;
+}
+
+
+
+/* 응답 영역 */
+.reply-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.reply-container > .reply {
+    display: block;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(2, 23, 41);
+    background-color: rgba(240, 248, 255, 1);
+    box-shadow: 0 0 5px rgba(240, 248, 255, 1);   /* is aliceblue color */
+}
+
+
+
+
+/* 페이지별 이미지 & 필터 */
+
+
+/* 시작페이지 */
+#rainy-window-in-city {
+    background-image: url("./images/rainy-window-in-city2.jpeg");
+}
+
+#rainy-window-in-city > .image-filter {
+    background-color: rgba(25, 12, 95, 0.281);
+}
+
+a.start {
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    border: 0;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: rgb(0, 37, 70);
+    background-color: rgba(240, 248, 255, 1);
+    box-shadow: 0 0 5px rgba(240, 248, 255, 1);   /* is aliceblue color */
+}
+
+/* 1번 페이지 */
+#morning-room {
+    background-image: url("./images/morning-room2.jpg");
+}
+#morning-room > .image-filter {
+    background-color: rgba(196, 172, 93, 0.281);
+}
+
+/* 2번 페이지 */
+#morning-room2 {
+    background-image: url("./images/morning-room.jpg");
+}
+#morning-room2 > .image-filter {
+    background-color: rgba(93, 112, 196, 0.281);
+}
+
+/* 3번 페이지 */
+#office {
+    background-image: url("./images/deborah_sweeney_desk_2.jpg");
+}
+#office > .image-filter {
+    background-color: rgba(196, 93, 93, 0.281);
+}
+
+/* 4번 페이지 */
+#backhome {
+    background-image: url("./images/morning-room3.jpg");
+}
+#backhome > .image-filter {
+    background-color: rgba(153, 74, 148, 0.281);
+}
